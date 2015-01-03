@@ -5,7 +5,12 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-  
+
+  api.use('telescope-base');
+  api.use('templating');
+
   api.addFiles('custom.css', 'client');
+  api.addFiles('banner.html', 'client');
+  api.addFiles('banner.js', 'client');
 
 });
